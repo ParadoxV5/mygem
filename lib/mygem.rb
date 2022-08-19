@@ -1,1 +1,1 @@
-require_relative "mygem/version"
+require_relative 'mygem/version'
