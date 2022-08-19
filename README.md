@@ -17,3 +17,8 @@ Instead, one could configure GitHub Actions to automatically create a new GitHub
 (and publish to GitHub Packages) whenëver the main branch has a manifesto file such as
 [`mygem.gemspec`](mygem.gemspec) or [`version.rb`](lib/mygem/version.rb) updated.
 [(Reference)](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#running-your-workflow-only-when-a-push-affects-specific-files)
+
+## License
+
+Copyright ParadoxV5 2022. Distributed under the
+[Boost Software License, Version 1.0](https://www.boost.org/users/license.html).
