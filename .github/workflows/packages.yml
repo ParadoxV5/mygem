@@ -1,0 +1,21 @@
+name: GitHub Packages
+on: {release: {types: [published]}}
+jobs:
+  packages:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+    
+    - uses: actions/checkout@v3
+      
+    - uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '2'
+        bundler-cache: true
+        
+    - name: Package Gem
+      run: gem build --output mygem.gem mygem.gemspec
+  
+    - name: Publish to GitHub Packages
+      run: gem push --key github --host https://rubygems.pkg.github.com/ParadoxV5 mygem.gem
+      env: {GITHUB_TOKEN: "${{github.token}}"}
