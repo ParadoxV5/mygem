@@ -16,7 +16,7 @@ Gem::Specification.new do |spec|
   spec.metadata['bug_tracker_uri'] = "#{github}/issues"
   spec.metadata['documentation_uri'] =
     spec.metadata['homepage_uri'] =
-    spec.homepage = 'https://paradoxv5-mygem.github.io'
+    spec.homepage = 'https://paradoxv5.github.io/mygem/'
   
   spec.files = Dir['*']
   spec.require_paths = ['lib']
