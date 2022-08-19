@@ -2,7 +2,7 @@
 require_relative 'lib/mygem/version'
 
 Gem::Specification.new do |spec|
-  spec.name = 'MyGem'
+  spec.name = 'mygem'
   spec.summary = 'A simple example Ruby Gem'
   spec.version = MyGem::VERSION
   spec.required_ruby_version = '>= 2'

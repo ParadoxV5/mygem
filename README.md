@@ -1,4 +1,4 @@
-`MyGem` is just a minimal Ruby Gem I made to learn Gem-cutting.
+`mygem` is just a minimal Ruby Gem I made to learn Gem-cutting.
 It is only a `gem`, no `rake`.
 
 Its goal is to be a basic example of a Ruby Gem.
