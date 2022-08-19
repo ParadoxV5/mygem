@@ -9,6 +9,8 @@ using GitHub Actions (See [`packages.yml`](.github/workflows/packages.yml)).
 
 ### Room for Improvement (`v2`)
 
+#### Automate Releases
+
 To release a new version, one currently would create a new GitHub Release,
 and GitHub Actions will automatically publish the Gem to GitHub Packages.
 
@@ -18,7 +20,16 @@ Instead, one could configure GitHub Actions to automatically create a new GitHub
 [`mygem.gemspec`](mygem.gemspec) or [`version.rb`](lib/mygem/version.rb) updated.
 [(Reference)](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#running-your-workflow-only-when-a-push-affects-specific-files)
 
-## License
+
+#### Automate Generation of RDoc Files
+
+Another automation GitHub Actions could do is generate [RDoc](https://github.com/ruby/rdoc)
+files and publish to GitHub Pages whenëver the main branch receives a code update.
+
+Currently, there – is no documentation webpage in the `gemspec`’s documentation webpage.
+
+
+### License
 
 Copyright ParadoxV5 2022. Distributed under the
 [Boost Software License, Version 1.0](https://www.boost.org/users/license.html).
