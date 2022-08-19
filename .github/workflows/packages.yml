@@ -18,4 +18,4 @@ jobs:
   
     - name: Publish to GitHub Packages
       run: gem push --host https://rubygems.pkg.github.com/ParadoxV5 mygem.gem
-      env: {GEM_HOST_API_KEY: "${{github.token}}"}
+      env: {GEM_HOST_API_KEY: "Bearer ${{github.token}}"}
