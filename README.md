@@ -21,7 +21,7 @@ Instead, one could configure GitHub Actions to automatically create a new GitHub
 [(Reference)](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#running-your-workflow-only-when-a-push-affects-specific-files)
 
 
-#### Automate Generation of YARD Docs (In progress at [`yard` branch](/ParadoxV5/mygem/tree/yard))
+#### Automate Generation of YARD Docs (In progress at [`yard` branch](../yard))
 
 Another automation GitHub Actions could do is generate [YARD docs](https://yardoc.org/) and
 [publish to GitHub Pages](https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/)
