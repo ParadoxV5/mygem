@@ -36,6 +36,8 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deploy-pages.outputs.page_url }}
+    permissions:
+      id-token: write
     runs-on: ubuntu-latest
     steps:
     - id: deploy-pages
