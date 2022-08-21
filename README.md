@@ -9,7 +9,7 @@ But it is also complete in file-structure conventions and enhanced with GitHub A
   whenëver a GitHub Release is published.
 * [`pages.yml`](.github/workflows/pages.yml) – Generate [YARD docs](https://yardoc.org/) and
   [publish to GitHub Pages](https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/)
-  whenëver the ~~`main` branch~~ *(currently testing in `yard` branch)* receives a code update.
+  whenëver the `main` branch receives a code update.
 
 
 ### Room for Improvement: Automate Releases

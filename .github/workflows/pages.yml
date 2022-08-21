@@ -1,7 +1,7 @@
 name: GitHub Pages
 on:
   push: 
-    branches: [yaml]
+    branches: [main]
     paths: [lib/**]
 concurrency:
   group: pages
