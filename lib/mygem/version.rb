@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 module MyGem
-  VERSION = '1.1.2'
+  VERSION = '1.2-rc0'
 end
