@@ -5,7 +5,7 @@ on:
     paths: [lib/**]
 concurrency:
   group: pages
-  cancel-in-progress: recursive
+  cancel-in-progress: true
 jobs:
   
   build:
