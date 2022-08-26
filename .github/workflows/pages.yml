@@ -4,7 +4,7 @@ on:
     branches: [main]
     paths: [lib/**]
 concurrency:
-  group: {{ github.job }}
+  group: pages
   cancel-in-progress: recursive
 jobs:
   
