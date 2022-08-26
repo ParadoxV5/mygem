@@ -25,7 +25,6 @@ jobs:
         bundler-cache: true
     
     - name: Package YARD
-      # bundle config https://rubygems.pkg.github.com/{{ github.repository_owner }} _:{{ github.token }}
       run: bundle exec yard doc
     
     - uses: actions/upload-pages-artifact@v1

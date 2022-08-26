@@ -16,9 +16,8 @@ jobs:
         bundler-cache: true
     
     - name: Package Gem
-      # bundle config https://rubygems.pkg.github.com/{{ github.repository_owner }} _:{{ github.token }}
       run: bundle exec gem build --output mygem.gem mygem.gemspec
     
     - name: Publish to GitHub Packages
       run: bundle exec gem push --host https://rubygems.pkg.github.com/ParadoxV5 mygem.gem
-      env: {GEM_HOST_API_KEY: "_ ${{github.token}}"}
+      env: {GEM_HOST_API_KEY: "Bearer ${{ github.token }}"}
