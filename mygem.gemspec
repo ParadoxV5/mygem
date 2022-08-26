@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
     spec.metadata['homepage_uri'] =
     spec.homepage = 'https://paradoxv5.github.io/mygem/'
   
-  spec.files = Dir['*']
+  spec.files = Dir['**/*']
   spec.require_paths = ['lib']
   
   #spec.add_dependency('dependent_gem', '~> 1.0')
