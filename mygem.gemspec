@@ -21,5 +21,8 @@ Gem::Specification.new do |spec|
   spec.files = Dir['**/*']
   spec.require_paths = ['lib']
   
-  #spec.add_dependency('dependent_gem', '~> 1.0')
+  #spec.add_dependency 'dependent_gem', '~> 1.0'
+  
+  spec.add_development_dependency 'yard', '~> 0.9'
+  spec.add_development_dependency 'commonmarker', '~> 0.23'
 end
