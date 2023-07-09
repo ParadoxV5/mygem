@@ -11,7 +11,7 @@ jobs:
       fail-fast: false
       matrix:
         os: [ubuntu-latest, windows-latest]
-        ruby-version: ['3', '2.0']
+        ruby-version: ['3', '3.0']
     runs-on: ${{ matrix.os }}
     timeout-minutes: 5
     steps:
@@ -26,4 +26,4 @@ jobs:
         bundler-cache: true
     
     - name: Print FFI Version
-      run: ruby -e 'require "ffi"; puts FFI::VERSION'
+      run: bundle exec ruby lib/test
