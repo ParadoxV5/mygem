@@ -21,5 +21,4 @@ Gem::Specification.new do |spec|
   spec.files = Dir['**/*']
   
   spec.required_ruby_version = '>= 2'
-  spec.add_dependency 'ffi', '~> 1.15.0'
 end
