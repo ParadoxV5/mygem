@@ -1,0 +1,29 @@
+name: <test>
+on:
+  push:
+    paths: [.github/workflows/test.yml, lib/**]
+  pull_request:
+    paths: [.github/workflows/test.yml, lib/**]
+jobs:
+  
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        ruby-version: ['3', '2.0']
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 5
+    steps:
+    
+    - uses: actions/checkout@v3
+      with:
+        submodules: recursive
+    
+    - uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: ${{ matrix.ruby-version }}
+        bundler-cache: true
+    
+    - name: Print Ruby Version
+      run: ruby --version
