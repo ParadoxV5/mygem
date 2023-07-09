@@ -21,6 +21,4 @@ Gem::Specification.new do |spec|
   spec.files = Dir['**/*']
   
   spec.required_ruby_version = '>= 2'
-  spec.add_development_dependency 'yard', '~> 0.9.0'
-  spec.add_development_dependency 'commonmarker', '~> 0.23.0'
 end
