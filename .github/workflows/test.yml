@@ -25,5 +25,5 @@ jobs:
         ruby-version: ${{ matrix.ruby-version }}
         bundler-cache: true
     
-    - name: Print Ruby Version
-      run: ruby --version
+    - name: Print FFI Version
+      run: bundle exec ruby -e 'puts FFI::VERSION'
