@@ -1,9 +1,9 @@
 name: <test>
 on:
   push:
-    paths: [.github/workflows/test.yml, lib/**]
+    paths: [.github/workflows/test.yml]
   pull_request:
-    paths: [.github/workflows/test.yml, lib/**]
+    paths: [.github/workflows/test.yml]
 jobs:
   
   test:
@@ -26,4 +26,4 @@ jobs:
         bundler-cache: true
     
     - name: Print FFI Version
-      run: bundle exec ruby -e 'puts FFI::VERSION'
+      run: ruby -e 'require 'ffi'; puts FFI::VERSION'
