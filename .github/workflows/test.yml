@@ -26,4 +26,4 @@ jobs:
         bundler-cache: true
     
     - name: Print FFI Version
-      run: bundle exec ruby lib/test
+      run: bundle exec ruby lib/test.rb
