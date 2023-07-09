@@ -26,4 +26,4 @@ jobs:
         bundler-cache: true
     
     - name: Print FFI Version
-      run: ruby -e 'require 'ffi'; puts FFI::VERSION'
+      run: ruby -e 'require "ffi"; puts FFI::VERSION'
