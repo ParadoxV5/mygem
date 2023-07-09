@@ -2,4 +2,4 @@
 /.idea/
 
 # Ruby
-Gemfile.lock
+/Gemfile.lock
