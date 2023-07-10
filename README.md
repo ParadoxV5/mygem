@@ -1,18 +1,19 @@
 `mygem` is just a minimal Ruby Gem I made to learn Gem-cutting.
 It is only a `gem`, no `rake`.
 
-Its goal is to be a basic example of a Ruby Gem.
-But it is also complete in file-structure conventions and enhanced with two GitHub Actions:
+Its goal is to be an almost-bare-minimum example of a Ruby Gem.
+But it is also complete in file-structure conventions.
 
-* [`packages.yml`](.github/workflows/packages.yml) – Publish to
-  [GitHub Packages](https://docs.github.com/packages/working-with-a-github-packages-registry/working-with-the-rubygems-registry)
-  whenëver a GitHub Release is published.
-* [`pages.yml`](.github/workflows/pages.yml) – Generate [YARD docs](https://yardoc.org/) and
-  [publish to GitHub Pages](https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/)
-  whenëver the `main` branch receives a code update.
+It’s also enhanced with the GitHub Actions workflow
+[`package.yml`](.github/workflows/package.yml),
+which publishes to [RubyGems](https://rubygems.org/gems/mygem_paradoxv5)
+whenëver a GitHub Release is published.
+
+This gem doubles as a sandbox I experiment with to prepare
+[`template-ruby-gem`](https://github.com/ParadoxV5/template-ruby-gem).
 
 
 ## License
 
-Copyright ParadoxV5 2022. Distributed under the
+Copyright ParadoxV5 2023. Distributed under the
 [Boost Software License, Version 1.0](https://www.boost.org/users/license.html).
